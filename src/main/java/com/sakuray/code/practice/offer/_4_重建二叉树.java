@@ -1,4 +1,4 @@
-package com.sakuray.code_practice;
+package com.sakuray.code.practice.offer;
 
 import java.util.HashMap;
 

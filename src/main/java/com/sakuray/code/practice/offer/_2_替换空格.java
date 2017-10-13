@@ -1,4 +1,4 @@
-package com.sakuray.code_practice;
+package com.sakuray.code.practice.offer;
 
 /**
  * 请实现一个函数，将一个字符串中的空格替换成“%20”。
