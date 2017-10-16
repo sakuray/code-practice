@@ -5,7 +5,7 @@ import java.util.Stack;
 /**
  * 用两个栈来实现一个队列，完成队列的Push和Pop操作。 队列中的元素为int类型。
  */
-public class _5_用两个栈实现队列 {
+public class _05_用两个栈实现队列 {
 	static Stack<Integer> stack1 = new Stack<Integer>();
     static Stack<Integer> stack2 = new Stack<Integer>();
     

@@ -8,7 +8,7 @@ import java.util.Arrays;
  * 例如数组{3,4,5,1,2}为{1,2,3,4,5}的一个旋转，该数组的最小值为1。 
  * NOTE：给出的所有元素都大于0，若数组大小为0，请返回0。
  */
-public class _6_旋转数组的最小数字 {
+public class _06_旋转数组的最小数字 {
 	
 	public static void main(String[] args) {
 		int[] array = {3,4,5,1,2,7}; //{1,3,4,5};

@@ -9,7 +9,7 @@ import java.util.HashMap;
  * 中序遍历：左中右 
  * 后序遍历：左右中
  */
-public class _4_重建二叉树 {
+public class _04_重建二叉树 {
 
 	public static void main(String[] args) {
 		int[] pre = { 1, 2, 4, 7, 3, 5, 6, 8 };
