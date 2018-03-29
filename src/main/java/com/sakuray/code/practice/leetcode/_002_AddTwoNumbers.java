@@ -1,5 +1,7 @@
 package com.sakuray.code.practice.leetcode;
 
+import com.sakuray.code.practice.leetcode.Tools.ListNode;
+
 /**
  * You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
  * You may assume the two numbers do not contain any leading zero, except the number 0 itself.
@@ -89,22 +91,4 @@ public class _002_AddTwoNumbers {
 	    return dummyHead.next;
 	}
 
-}
-
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
-class ListNode {
-	int val;
-	ListNode next;
-	ListNode(int x) {val = x;}
-	@Override
-	public String toString() {
-		return next == null ? String.valueOf(val) : val + "->" + next.toString();
-	}
 }

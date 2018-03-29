@@ -1,5 +1,7 @@
 package com.sakuray.code.practice.leetcode;
 
+import com.sakuray.code.practice.leetcode.Tools.ListNode;
+
 /**
  * Given a linked list, remove the nth node from the end of list and return its head.
 	For example,
@@ -12,16 +14,6 @@ package com.sakuray.code.practice.leetcode;
  */
 public class _019_RemoveNthNodeFromEndOfList {
 
-	static class ListNode {
-		int val;
-		ListNode next;
-		ListNode(int x) { val = x; }
-		@Override
-		public String toString() {
-			return val + (next != null ? "->" + next : "");
-		}
-	}
-	
 	public static void main(String[] args) {
 		ListNode l1 = new ListNode(1);
 		ListNode l2 = new ListNode(2);

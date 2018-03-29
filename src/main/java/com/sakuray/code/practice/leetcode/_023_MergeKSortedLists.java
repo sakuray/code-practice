@@ -1,20 +1,11 @@
 package com.sakuray.code.practice.leetcode;
 
+import com.sakuray.code.practice.leetcode.Tools.ListNode;
 
 /**
  * Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
  */
 public class _023_MergeKSortedLists {
-	
-	static class ListNode {
-		int val;
-		ListNode next;
-		ListNode(int x) {val = x;}
-		@Override
-		public String toString() {
-			return next == null ? String.valueOf(val) : val + "->" + next.toString();
-		}
-	}
 	
 	public static void main(String[] args) {
 		ListNode one1 = new ListNode(2);

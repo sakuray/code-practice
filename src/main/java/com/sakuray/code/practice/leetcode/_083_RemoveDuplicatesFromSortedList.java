@@ -1,5 +1,7 @@
 package com.sakuray.code.practice.leetcode;
 
+import com.sakuray.code.practice.leetcode.Tools.ListNode;
+
 /**
  * Given a sorted linked list, delete all duplicates such that each element appear only once.
 For example,
@@ -8,16 +10,6 @@ For example,
  */
 public class _083_RemoveDuplicatesFromSortedList {
 
-	static class ListNode {
-		int val;
-		ListNode next;
-		ListNode(int x) {val = x;}
-		@Override
-		public String toString() {
-			return next == null ? String.valueOf(val) : val + "->" + next.toString();
-		}
-	}
-	
 	public static void main(String[] args) {
 		ListNode l1 = new ListNode(1);
 		ListNode l2 = new ListNode(1);

@@ -1,5 +1,6 @@
 package com.sakuray.code.practice.leetcode;
 
+import com.sakuray.code.practice.leetcode.Tools.ListNode;
 
 /**
  * Merge two sorted linked lists and return it as a new list. 
@@ -10,16 +11,6 @@ package com.sakuray.code.practice.leetcode;
  */
 public class _021_MergeTwoSortedLists {
 
-	static class ListNode {
-		int val;
-		ListNode next;
-		ListNode(int x) { val = x; }
-		@Override
-		public String toString() {
-			return val + (next != null ? "->" + next : "");
-		}
-	}
-	
 	public static void main(String[] args) {
 		ListNode l1 = new ListNode(1);
 		ListNode l2= new ListNode(2);

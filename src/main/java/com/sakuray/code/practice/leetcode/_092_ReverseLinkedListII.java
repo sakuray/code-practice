@@ -1,5 +1,7 @@
 package com.sakuray.code.practice.leetcode;
 
+import com.sakuray.code.practice.leetcode.Tools.ListNode;
+
 /**
  * Reverse a linked list from position m to n. Do it in-place and in one-pass.
 	For example:
@@ -12,16 +14,6 @@ package com.sakuray.code.practice.leetcode;
  */
 public class _092_ReverseLinkedListII {
 
-	static class ListNode {
-		int val;
-		ListNode next;
-		ListNode(int x) { val = x; }
-		@Override
-		public String toString() {
-			return val + (next != null ? "->" + next : "");
-		}
-	}
-	
 	public static void main(String[] args) {
 		ListNode l1 = new ListNode(1);
 		ListNode l2 = new ListNode(2);
