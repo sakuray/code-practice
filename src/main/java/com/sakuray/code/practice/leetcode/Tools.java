@@ -5,11 +5,11 @@ import java.util.Queue;
 
 public class Tools {
 
-	static class TreeNode {
+	public static class TreeNode {
 
-		int val;
-		TreeNode left;
-		TreeNode right;
+		public int val;
+        public TreeNode left;
+        public TreeNode right;
 
 		public TreeNode(int val) {
 			this.val = val;
@@ -49,11 +49,11 @@ public class Tools {
 		}
 		return head;
 	}
-	
-	static class ListNode {
-		int val;
-		ListNode next;
-		ListNode(int x) {
+
+	public static class ListNode {
+        public int val;
+        public ListNode next;
+        public ListNode(int x) {
 			val = x;
 			next = null;
 		}
@@ -62,12 +62,12 @@ public class Tools {
 			return val + (next == null ? "" : "->" + next);
 		}
 	}
-	
-	static class Interval {
-		int start;
-		int end;
-		Interval() { start = 0; end = 0; }
-		Interval(int s, int e) { start = s; end = e; }
+
+	public static class Interval {
+        public int start;
+        public int end;
+        public Interval() { start = 0; end = 0; }
+        public Interval(int s, int e) { start = s; end = e; }
 		@Override
 		public String toString() {
 			return "[" + start + "," + end + "]";
