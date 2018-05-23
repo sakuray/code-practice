@@ -49,7 +49,23 @@ public class Tools {
 		}
 		return head;
 	}
-
+	
+	/**
+	 * 构建链表节点
+	 * @param obj
+	 * @return
+	 */
+	public static ListNode buildList(int ...obj) {
+		ListNode begin = new ListNode(-1);
+		ListNode last = begin, cur;
+		for(int i = 0; i < obj.length; i++) {
+			cur = new ListNode(obj[i]);
+			last.next = cur;
+			last = cur;
+		}
+		return begin.next;
+	}
+ 
 	public static class ListNode {
         public int val;
         public ListNode next;
