@@ -65,6 +65,29 @@ public class Tools {
 		}
 		return begin.next;
 	}
+
+    /**
+     * 构建二维数组
+     * @param col   列数
+     * @param obj   值
+     * @return      二维数组
+     */
+	public static int[][] build2Array(int col, int ...obj) {
+	    int size = obj.length;
+        if(size % col != 0) {
+            throw new IllegalArgumentException("错误的列数或者是值数量");
+        }
+	    int row = size / col;
+	    int[][] result = new int[row][col];
+	    int length=0;
+	    for(int i = 0; i < row; i++) {
+	        for(int j = 0; j < col; j++) {
+	            result[i][j] = obj[length];
+	            length++;
+            }
+        }
+        return result;
+    }
  
 	public static class ListNode {
         public int val;
