@@ -18,4 +18,26 @@ public class PrintTools {
 			System.out.println();
 		}
 	}
+	
+	/**
+	 * 打印一维数组的值
+	 * @param array
+	 */
+	public static void printArray(int[] array) {
+		if(array == null) return;
+		printArray(array, 0, array.length);
+	}
+	
+	/**
+	 * 打印指定范围的数组的值
+	 */
+	public static void printArray(int[] array, int start, int end) {
+		if(array == null) return;
+		System.out.print("[");
+		for(int i = start; i < end; i++) {
+			System.out.print(array[i]);
+			if(i != end - 1) System.out.print(", ");
+		}
+		System.out.println("]");
+	}
 }
