@@ -3,7 +3,7 @@ package com.sakuray.code.practice.offer;
 /**
  * 输入两个单调递增的链表，输出两个链表合成后的链表，当然我们需要合成后的链表满足单调不减规则。
  */
-public class _15_合并两个排序的链表 {
+public class _16_合并两个排序的链表 {
 
 	public static void main(String[] args) {
 		ListNode nine = new ListNode(9);
