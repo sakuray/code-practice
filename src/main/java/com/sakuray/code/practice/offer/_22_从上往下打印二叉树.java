@@ -5,6 +5,8 @@ import java.util.*;
 /**
  * 从上往下打印出二叉树的每个节点，同层节点从左至右打印。
  */
+import static com.sakuray.code.practice.leetcode.Tools.*;
+
 public class _22_从上往下打印二叉树 {
 
 

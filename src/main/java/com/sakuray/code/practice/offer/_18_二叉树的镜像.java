@@ -18,6 +18,8 @@ import java.util.Stack;
  *     	 / \  / \
  *     	11 9 7  5
  */
+import static com.sakuray.code.practice.leetcode.Tools.*;
+
 public class _18_二叉树的镜像 {
 
 
@@ -46,18 +48,5 @@ public class _18_二叉树的镜像 {
             if(node.left != null) stack.push(node.left);
             if(node.right != null) stack.push(node.right);
         }
-    }
-
-
-    public class TreeNode {
-        int val = 0;
-        TreeNode left = null;
-        TreeNode right = null;
-
-        public TreeNode(int val) {
-            this.val = val;
-
-        }
-
     }
 }
