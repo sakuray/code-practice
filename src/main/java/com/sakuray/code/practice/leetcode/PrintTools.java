@@ -1,5 +1,8 @@
 package com.sakuray.code.practice.leetcode;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * 输出工具类
  */
@@ -39,5 +42,18 @@ public class PrintTools {
 			if(i != end - 1) System.out.print(", ");
 		}
 		System.out.println("]");
+	}
+
+	public static <T> void printList(List<T> list) {
+		if (list == null) return;
+		System.out.println(Arrays.toString(list.toArray()));
+	}
+
+	public static <T> void print2List(List<List<T>> lists) {
+		if (lists == null) return;
+		for(List list : lists) {
+			printList(list);
+		}
+		System.out.println();
 	}
 }
