@@ -57,7 +57,7 @@ public class PrintTools {
 		System.out.println();
 	}
 
-	public static <T> void print3List(List<T> list) {
+	public static <T> void printList2(List<T> list) {
 		if (list == null) return;
 		System.out.print("[");
 		for (int i = 0; i < list.size(); i++) {
