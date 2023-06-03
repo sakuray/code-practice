@@ -56,4 +56,14 @@ public class PrintTools {
 		}
 		System.out.println();
 	}
+
+	public static <T> void printList2(List<T> list) {
+		if (list == null) return;
+		System.out.print("[");
+		for (int i = 0; i < list.size(); i++) {
+			System.out.print(list.get(i));
+			if (i != list.size() -1) System.out.print(", ");
+		}
+		System.out.println("]");
+	}
 }

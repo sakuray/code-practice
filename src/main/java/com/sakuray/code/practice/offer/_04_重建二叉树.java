@@ -9,6 +9,8 @@ import java.util.HashMap;
  * 中序遍历：左中右 
  * 后序遍历：左右中
  */
+import static com.sakuray.code.practice.leetcode.Tools.*;
+
 public class _04_重建二叉树 {
 
 	public static void main(String[] args) {
@@ -72,20 +74,4 @@ public class _04_重建二叉树 {
         head.right=preIn(p,pi+index-ni+1,pj,n,index+1,nj,map);
         return head;
     }
-}
-
-class TreeNode {
-
-	int val;
-	TreeNode left;
-	TreeNode right;
-
-	public TreeNode(int val) {
-		this.val = val;
-	}
-
-	@Override
-	public String toString() {
-		return "val=" + val + ", left=[" + left + "], right=[" + right + "]";
-	}
 }

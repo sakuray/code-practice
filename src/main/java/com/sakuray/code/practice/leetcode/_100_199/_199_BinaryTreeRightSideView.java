@@ -1,5 +1,7 @@
 package com.sakuray.code.practice.leetcode._100_199;
 
+import com.sakuray.code.practice.leetcode.Tools;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -17,14 +19,10 @@ import java.util.List;
 	You should return [1, 3, 4].
  *
  */
+import static com.sakuray.code.practice.leetcode.Tools.*;
+
 public class _199_BinaryTreeRightSideView {
-	
-	static class TreeNode {
-		int val;
-		TreeNode left;
-		TreeNode right;
-		TreeNode(int x) { val = x; }
-	}
+
 	
 	public static void main(String[] args) {
 		TreeNode l1 = new TreeNode(1);

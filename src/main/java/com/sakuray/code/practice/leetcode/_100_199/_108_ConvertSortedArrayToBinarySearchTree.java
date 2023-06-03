@@ -13,20 +13,9 @@ Example:
 	   /   /
 	 -10  5
  */
+import static com.sakuray.code.practice.leetcode.Tools.*;
+
 public class _108_ConvertSortedArrayToBinarySearchTree {
-	
-	static class TreeNode {
-		int val;
-		TreeNode left;
-		TreeNode right;
-		public TreeNode(int val) {
-			this.val = val;
-		}
-		@Override
-		public String toString() {
-			return "val=" + val + ", left=[" + left + "], right=[" + right + "]";
-		}
-	}
 	
 	public static void main(String[] args) {
 		System.out.println(sortedArrayToBST(new int[] {-10,-3,0,5,9}));
