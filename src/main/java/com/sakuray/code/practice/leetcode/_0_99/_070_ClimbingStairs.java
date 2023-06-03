@@ -1,23 +1,17 @@
 package com.sakuray.code.practice.leetcode._0_99;
 
-
 /**
- * You are climbing a stair case. It takes n steps to reach to the top.
- *
+ * You are climbing a staircase. It takes n steps to reach the top.
+ * <p>
  * Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
- *
- * Note: Given n will be a positive integer.
- *
- * Example 1:
- *
- * Input: 2
+ * <p>
+ * Input: n = 2
  * Output: 2
  * Explanation: There are two ways to climb to the top.
  * 1. 1 step + 1 step
  * 2. 2 steps
- * Example 2:
- *
- * Input: 3
+ * <p>
+ * Input: n = 3
  * Output: 3
  * Explanation: There are three ways to climb to the top.
  * 1. 1 step + 1 step + 1 step
@@ -26,24 +20,18 @@ package com.sakuray.code.practice.leetcode._0_99;
  */
 public class _070_ClimbingStairs {
 
-    public static void main(String[] args) {
-        System.out.println(climbStairs(2));
-        System.out.println(climbStairs(3));
-        System.out.println(climbStairs(45));
-    }
-
-
-    public static int climbStairs(int n) {
-        if (n < 1) return 0;
+    /**
+     * 本质上是f(i) = f(i - 1) + f(i - 2)
+     */
+    public int climbStairs(int n) {
         if (n == 1) return 1;
         if (n == 2) return 2;
-        int a = 1, b = 2, result = 0;
+        int f1 = 1, f2 = 2, result = 0;
         for (int i = 3; i <= n; i++) {
-            result = a + b;
-            a = b;
-            b = result;
+            result = f1 + f2;
+            f1 = f2;
+            f2 = result;
         }
         return result;
     }
-
 }
