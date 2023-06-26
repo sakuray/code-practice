@@ -25,7 +25,7 @@ import static com.sakuray.code.practice.leetcode.Tools.*;
  * solution.getRandom(); // return 3
  * // getRandom() should return either 1, 2, or 3 randomly. Each element should have equal probability of returning.
  */
-public class _384_LinkedListRandomNode {
+public class _382_LinkedListRandomNode {
 
     private ListNode node;
     private ListNode head;
