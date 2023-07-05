@@ -22,8 +22,8 @@ Follow up:
 public class _392_IsSubsequence {
 
 	public static void main(String[] args) {
-		System.out.println(true ==isSubsequence("abc", "ahbgdc"));
-		System.out.println(false == isSubsequence("axc", "ahbgdc"));
+		System.out.println(isSubsequence("abc", "ahbgdc"));
+		System.out.println(!isSubsequence("axc", "ahbgdc"));
 	}
 	
 	public static boolean isSubsequence(String s, String t) {
@@ -33,7 +33,7 @@ public class _392_IsSubsequence {
 				index++;
 			}
 		}
-        return index == s.length() ? true : false;
+        return index == s.length();
     }
 	
 	public boolean isSubsequence_S(String s, String t) {
